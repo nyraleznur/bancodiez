@@ -16,9 +16,9 @@ public class UsuarioRepositorioTest {
 
     @Autowired
     private UusuarioRepositorio repositorio;
-    @Test
-    public void testcrearcliente(){
+    //@Test
+   /* public void testcrearcliente(){
         Uusraio usuarioguardar=repositorio.save(new Uusraio(100L,"pepe","123","cliente"));
         Assertions.assertThat(usuarioguardar.getId()).isGreaterThan(0);
-    }
+    }*/
 }

@@ -6,7 +6,7 @@ public class Uusraio {
     @Id
     // @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "documento",nullable = false, length = 50)
-    private  Long documento;
+    private  String documento;
     @Column(name = "usuario",nullable = false, length = 50)
     private String usuario;
     @Column(name = "clave", nullable = false, length = 50)
@@ -19,18 +19,18 @@ public class Uusraio {
      public Uusraio() {
     }
 
-    public Uusraio(Long id, String usuario, String clave, String rol) {
+    public Uusraio(String id, String usuario, String clave, String rol) {
         this.documento = id;
         this.usuario = usuario;
         this.clave = clave;
         this.rol = rol;
     }
 
-    public Long getId() {
+    public String getId() {
         return documento;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.documento = id;
     }
 

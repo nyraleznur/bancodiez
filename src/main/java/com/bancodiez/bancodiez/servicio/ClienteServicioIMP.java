@@ -14,6 +14,7 @@ public class ClienteServicioIMP implements  ClienteServicio{
 
     @Override
     public List<Cliente> listartodoslosclientes() {
+
         return repositorio.findAll();
     }
 }

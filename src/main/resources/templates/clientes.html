@@ -27,10 +27,10 @@ hola
         </tr>
         </thead>
         <tbody>
-        <tr th:each="cliente:${clientes}">
-            <th th:text="${cliente.nombre}"></thth:text></th>
-            <th th:text="${cliente.apellido}">Apellido</th>
-            <th th:text="${cliente.email}">Email</th>
+        <tr th:each="cli:${clientes}">
+            <th th:text="${cli.nombre}"></thth:text></th>
+            <th th:text="${cli.apellido}">Apellido</th>
+            <th th:text="${cli.email}">Email</th>
         </tr>
         </tbody>
     </table>

@@ -34,11 +34,12 @@ public class UsuarioClinetes {
     @PostMapping("usuario/guardar")
 
     public String guardausuario(Uusraio usuario) {
-        Uusraio usuarioguardar = repositorio.save(new Uusraio(300L, usuario.getUsuario(), "123", "cliente"));
+
+        Uusraio usuarioguardar = repositorio.save(new Uusraio(usuario.getId(), usuario.getUsuario(), usuario.getClave(),usuario.getRol()));
         return "redirect:/usuario";
     }
 
-    @GetMapping("/cliente/nuevo")
+    /*@GetMapping("/cliente/nuevo")
     public String mostrarformularioparainsertarclinete(Model modelo) {
         modelo.addAttribute("clienteinsertar", new Cliente());
         return "clientesfrm";
@@ -48,7 +49,7 @@ public class UsuarioClinetes {
     public String guardarcliente(Cliente cliente){
         Cliente guardarcliente=repositorio.save(new Cliente(cliente.getId(),cliente.getNombre(),cliente.getApellido(),cliente.getEmail()));
 
-    }
+    }*/
 
 
 }
